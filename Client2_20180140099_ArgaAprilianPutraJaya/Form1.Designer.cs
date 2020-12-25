@@ -1,4 +1,4 @@
-﻿namespace Client2_20180140103_Rama_Soni_Ravictor
+﻿namespace Client2_20180140099_ArgaAprilianPutraJaya
 {
     partial class Form1
     {
@@ -41,47 +41,51 @@
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonJumlah = new System.Windows.Forms.Button();
             this.labelJumlah = new System.Windows.Forms.Label();
+            this.buttonSync = new System.Windows.Forms.Button();
+            this.textBoxDelete = new System.Windows.Forms.TextBox();
+            this.labelKeterangan = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(123, 337);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(128, 423);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(704, 235);
             this.dataGridView1.TabIndex = 18;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // textBoxAngkatan
             // 
-            this.textBoxAngkatan.Location = new System.Drawing.Point(280, 225);
-            this.textBoxAngkatan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxAngkatan.Location = new System.Drawing.Point(280, 234);
+            this.textBoxAngkatan.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxAngkatan.Name = "textBoxAngkatan";
             this.textBoxAngkatan.Size = new System.Drawing.Size(217, 22);
             this.textBoxAngkatan.TabIndex = 17;
             // 
             // textBoxProdi
             // 
-            this.textBoxProdi.Location = new System.Drawing.Point(280, 178);
-            this.textBoxProdi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxProdi.Location = new System.Drawing.Point(280, 187);
+            this.textBoxProdi.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxProdi.Name = "textBoxProdi";
             this.textBoxProdi.Size = new System.Drawing.Size(217, 22);
             this.textBoxProdi.TabIndex = 16;
             // 
             // textBoxNIM
             // 
-            this.textBoxNIM.Location = new System.Drawing.Point(280, 133);
-            this.textBoxNIM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxNIM.Location = new System.Drawing.Point(280, 142);
+            this.textBoxNIM.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNIM.Name = "textBoxNIM";
             this.textBoxNIM.Size = new System.Drawing.Size(217, 22);
             this.textBoxNIM.TabIndex = 15;
             // 
             // textBoxNama
             // 
-            this.textBoxNama.Location = new System.Drawing.Point(280, 91);
-            this.textBoxNama.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxNama.Location = new System.Drawing.Point(280, 100);
+            this.textBoxNama.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNama.Name = "textBoxNama";
             this.textBoxNama.Size = new System.Drawing.Size(217, 22);
             this.textBoxNama.TabIndex = 14;
@@ -128,8 +132,8 @@
             // 
             // buttonUpdate
             // 
-            this.buttonUpdate.Location = new System.Drawing.Point(653, 91);
-            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonUpdate.Location = new System.Drawing.Point(612, 136);
+            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(179, 28);
             this.buttonUpdate.TabIndex = 19;
@@ -139,8 +143,8 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(653, 142);
-            this.buttonDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonDelete.Location = new System.Drawing.Point(280, 356);
+            this.buttonDelete.Margin = new System.Windows.Forms.Padding(4);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(179, 28);
             this.buttonDelete.TabIndex = 20;
@@ -150,8 +154,8 @@
             // 
             // buttonJumlah
             // 
-            this.buttonJumlah.Location = new System.Drawing.Point(653, 187);
-            this.buttonJumlah.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonJumlah.Location = new System.Drawing.Point(280, 299);
+            this.buttonJumlah.Margin = new System.Windows.Forms.Padding(4);
             this.buttonJumlah.Name = "buttonJumlah";
             this.buttonJumlah.Size = new System.Drawing.Size(179, 28);
             this.buttonJumlah.TabIndex = 21;
@@ -162,18 +166,51 @@
             // labelJumlah
             // 
             this.labelJumlah.AutoSize = true;
-            this.labelJumlah.Location = new System.Drawing.Point(693, 246);
+            this.labelJumlah.Location = new System.Drawing.Point(526, 305);
             this.labelJumlah.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelJumlah.Name = "labelJumlah";
             this.labelJumlah.Size = new System.Drawing.Size(88, 17);
             this.labelJumlah.TabIndex = 22;
             this.labelJumlah.Text = "Hasil Jumlah";
             // 
+            // buttonSync
+            // 
+            this.buttonSync.Location = new System.Drawing.Point(612, 187);
+            this.buttonSync.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSync.Name = "buttonSync";
+            this.buttonSync.Size = new System.Drawing.Size(179, 28);
+            this.buttonSync.TabIndex = 23;
+            this.buttonSync.Text = "Show Data";
+            this.buttonSync.UseVisualStyleBackColor = true;
+            this.buttonSync.Click += new System.EventHandler(this.buttonSync_Click);
+            // 
+            // textBoxDelete
+            // 
+            this.textBoxDelete.Location = new System.Drawing.Point(491, 359);
+            this.textBoxDelete.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDelete.Name = "textBoxDelete";
+            this.textBoxDelete.Size = new System.Drawing.Size(251, 22);
+            this.textBoxDelete.TabIndex = 24;
+            this.textBoxDelete.Text = "Masukan NIM untuk delete";
+            // 
+            // labelKeterangan
+            // 
+            this.labelKeterangan.AutoSize = true;
+            this.labelKeterangan.Location = new System.Drawing.Point(346, 49);
+            this.labelKeterangan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelKeterangan.Name = "labelKeterangan";
+            this.labelKeterangan.Size = new System.Drawing.Size(82, 17);
+            this.labelKeterangan.TabIndex = 25;
+            this.labelKeterangan.Text = "Keterangan";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(936, 656);
+            this.Controls.Add(this.labelKeterangan);
+            this.Controls.Add(this.textBoxDelete);
+            this.Controls.Add(this.buttonSync);
             this.Controls.Add(this.labelJumlah);
             this.Controls.Add(this.buttonJumlah);
             this.Controls.Add(this.buttonDelete);
@@ -187,7 +224,7 @@
             this.Controls.Add(this.labelProdi);
             this.Controls.Add(this.labelNIM);
             this.Controls.Add(this.labelNama);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -212,6 +249,9 @@
         private System.Windows.Forms.Button buttonDelete;
         private System.Windows.Forms.Button buttonJumlah;
         private System.Windows.Forms.Label labelJumlah;
+        private System.Windows.Forms.Button buttonSync;
+        private System.Windows.Forms.TextBox textBoxDelete;
+        private System.Windows.Forms.Label labelKeterangan;
     }
 }
 

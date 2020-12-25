@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -78,6 +79,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceRest_20180140099_ArgaAprilianPutraJaya\ServiceRest_20180140099_ArgaAprilianPutraJaya.csproj">
+      <Project>{20C423A8-B321-4755-8C01-3FEF7DDE6BC4}</Project>
+      <Name>ServiceRest_20180140099_ArgaAprilianPutraJaya</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

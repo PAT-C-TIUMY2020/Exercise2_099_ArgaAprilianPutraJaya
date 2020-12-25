@@ -70,17 +70,5 @@ namespace ServerConfig_20180140099_ArgaAprilianPutraJaya
         {
 
         }
-
-        private void InitializeComponent()
-        {
-            this.SuspendLayout();
-            // 
-            // Form1
-            // 
-            this.ClientSize = new System.Drawing.Size(319, 244);
-            this.Name = "Form1";
-            this.ResumeLayout(false);
-
-        }
     }
 }
